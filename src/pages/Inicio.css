@@ -1,0 +1,144 @@
+/* Container Principal */
+.page-container {
+  width: 80vw;  /* O container ocupa 80% da largura da página */
+  margin: 0 auto;  /* Centraliza o container horizontalmente */
+  display: flex;  /* Define Flexbox para alinhar o conteúdo */
+  flex-direction: column;  /* Organiza o conteúdo verticalmente */
+  align-items: center;  /* Centraliza horizontalmente o conteúdo */
+  padding: 20px;  /* Define espaçamento interno */
+  background-color: #f9f9f9;  /* Define a cor de fundo */
+}
+
+/* Hero Section substituída por um banner */
+.hero-section {
+  margin-top: 50px;
+  position: sticky; /* O contêiner do banner será o ponto de referência para o posicionamento absoluto */
+  width: 100%; /* O banner ocupa 100% da largura do container */
+  height: 300px; /* Define a altura do banner em 300px */
+  overflow: hidden; /* Esconde qualquer parte da imagem que ultrapasse o limite */
+}
+
+.banner-image {
+  width: 100%; /* A imagem do banner ocupa toda a largura */
+  height: 100%; /* A imagem do banner ocupa toda a altura da seção */
+  object-fit: contain; /* Ajusta a imagem dentro da seção sem cortar, mantendo suas proporções */
+}
+
+
+.aurelia-logo {
+  position: absolute; /* Faz o logo flutuar na página inteira, fixado */
+  top: 250px; /* Define a posição do logo a partir do topo da página */
+  right: 680px; /* Define a posição do logo a partir da direita */
+  z-index: 100; /* Garante que o logo esteja à frente de outros elementos */
+  width: 350px; /* Tamanho do logo */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+
+/* Título da seção de campanhas */
+.section-title {
+  font-size: 1.5rem; /* Tamanho da fonte */
+  color: #67171f; /* Cor do texto (ajuste conforme sua paleta) */
+  text-align: center; /* Centraliza o texto */
+  font-weight: bold; /* Deixa o texto em negrito */
+  margin-top: 10px; /* Espaçamento superior */
+  margin-bottom: 10px; /* Espaçamento inferior */
+  letter-spacing: 1px; /* Espaçamento entre letras */
+  text-transform: uppercase; /* Deixa o texto em maiúsculas */
+  border-bottom: 2px solid #c6a05f; /* Linha inferior para destacar */
+  display: inline-block; /* Faz o h1 se comportar como um bloco inline */
+  padding-bottom: 5px; /* Espaço entre o texto e a linha inferior */
+}
+
+/* Seção de Campanhas em Destaque */
+.campaigns-section {
+  display: flex;  /* Flexbox para alinhar o conteúdo */
+  flex-direction: column;  /* Organiza o conteúdo verticalmente */
+  justify-content: center;  /* Centraliza verticalmente */
+  align-items: center;  /* Centraliza horizontalmente */
+  margin-top: 20px;  /* Margem superior para a seção */
+  width: 100%;  /* O container ocupa 100% da largura */
+  max-width: 100%;  /* Define que o conteúdo ocupa 80% da largura */
+  margin-left: auto;  /* Centraliza horizontalmente */
+  margin-right: auto;  /* Centraliza horizontalmente */
+  text-align: center;  /* Centraliza o texto */
+}
+
+/* Grade de campanhas (grid layout) */
+.campaign-grid {
+  display: grid;  /* Define o layout em grid */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  /* Grid responsivo com colunas de no mínimo 250px */
+  gap: 20px;  /* Define o espaçamento entre os itens da grid */
+  justify-items: center;  /* Centraliza os cards dentro da grid */
+  width: 80%;  /* A grid ocupa toda a largura disponível */
+}
+
+/* Estilo dos cards de campanha */
+.campaign-card {
+  background-color: white;  /* Fundo branco dos cards */
+  padding: 20px;  /* Define espaçamento interno */
+  border: 1px solid #c6a05f;  /* Borda dos cards */
+  border-radius: 5px;  /* Bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(103, 23, 31, 0.2);  /* Sombra suave nos cards */
+  display: flex;  /* Flexbox para alinhar o conteúdo */
+  flex-direction: column;  /* Organiza o conteúdo verticalmente */
+  justify-content: space-between;  /* Espaça os itens do card */
+  max-width: 250px;  /* Define uma largura máxima */
+  width: 100%;  /* Ocupa 100% da largura disponível */
+}
+
+/* Imagem da campanha */
+.campaign-image {
+  width: 100%;  /* A imagem ocupa toda a largura */
+  height: 200px;  /* Define altura fixa para a imagem */
+  object-fit: cover;  /* Garante que a imagem não distorça */
+  border-radius: 5px;  /* Bordas arredondadas */
+}
+
+/* Botão "Ver Mais" */
+.ver-mais-container {
+  display: flex;  /* Flexbox para organizar o botão */
+  justify-content: right;  /* Alinha o botão à direita */
+  margin-top: 10px;  /* Margem superior */
+  margin-bottom: 10px;
+  width: 100%;  /* O botão ocupa 100% da largura */
+  max-width: 97%;  /* Define que o conteúdo ocupa 80% da largura */
+}
+
+.ver-mais-btn {
+  background-color: #67171f;  /* Cor de fundo */
+  color: white;  /* Cor do texto */
+  padding: 10px 20px;  /* Espaçamento interno */
+  border-radius: 5px;  /* Bordas arredondadas */
+  cursor: pointer;  /* Cursor de ponteiro */
+  transition: background-color 0.3s ease;  /* Transição suave */
+}
+
+.ver-mais-btn:hover {
+  background-color: #c6a05f;  /* Cor de fundo ao passar o mouse */
+}
+
+/* Barra de Progresso */
+.progress-bar {
+  background-color: #f1f1f1;  /* Fundo da barra */
+  height: 10px;  /* Altura da barra */
+  border-radius: 5px;  /* Bordas arredondadas */
+  margin: 10px 0;  /* Margens acima e abaixo */
+}
+
+.progress {
+  background-color: #c6a05f;  /* Cor da barra preenchida */
+  height: 100%;  /* Preenche toda a altura */
+  border-radius: 5px;  /* Bordas arredondadas */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .campaign-grid {
+    grid-template-columns: 1fr;  /* Ajusta para uma coluna em telas menores */
+  }
+
+  .ver-mais-container {
+    justify-content: center;  /* Centraliza o botão em telas menores */
+  }
+}

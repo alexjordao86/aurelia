@@ -1,38 +1,273 @@
+/* Estilo geral do corpo */
+body {
+  font-family: 'Arial', sans-serif; /* Define a fonte padrão */
+  margin: 0px; /* Remove as margens padrão do navegador */
+  padding: 0; /* Remove o preenchimento padrão do navegador */
+  background-color: #f9f9f9; /* Define uma cor de fundo clara para o site */
+  display: flex; /* Utiliza flexbox para organizar o conteúdo */
+  flex-direction: column; /* Organiza o conteúdo em coluna */
+  min-height: 100vh; /* Garante que o body ocupe 100% da altura da tela */
+  width: 99vw; /* Garante que o body ocupe 100% da largura da tela */
+}
+
+/* Estilo da aplicação */
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  flex-grow: 1; /* Garante que o conteúdo do site se expanda para preencher o espaço disponível */
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Alinha o conteúdo em coluna */
+  justify-content: space-between; /* Espaça o conteúdo para ocupar toda a altura */
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Estilo da barra de navegação */
+.navbar {
+  display: flex; /* Utiliza Flexbox para organizar o conteúdo da navbar */
+  justify-content: space-between; /* Espaça os itens nas extremidades */
+  align-items: center; /* Alinha os itens verticalmente no centro */
+  background-color: #67171f; /* Define a cor de fundo da navbar */
+  padding: 10px 30px; /* Define o espaçamento interno da navbar */
+  width: 81%; /* Garante que a navbar ocupe toda a largura da página */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.navbar-logo img {
+  height: 50px; /* Define a altura da logo */
+  max-width: 100%; /* Garante que a logo seja redimensionada corretamente em telas menores */
+}
+
+.navbar-menu {
+  list-style-type: none; /* Remove os marcadores das listas */
+  display: flex; /* Utiliza Flexbox para organizar os itens da lista horizontalmente */
+  gap: 10px; /* Adiciona um espaço entre os itens */
+  flex-wrap: wrap; /* Permite que os itens quebrem linha em telas menores */
+}
+
+.navbar-menu li {
+  display: inline-block; /* Exibe os itens da lista na mesma linha */
+  background-color: #67171f;
+  border-radius: 10px; /* Adiciona cantos arredondados ao fundo do link */
+  padding: 5px 0px;
+  border: none;
+}
+
+.navbar-menu a {
+  color: #fff; /* Define a cor do texto dos links da navbar */
+  text-decoration: none; /* Remove o sublinhado dos links */
+  font-size: 14px; /* Define o tamanho da fonte dos links */
+  padding: 5px 5px; /* Define o espaçamento interno dos links */
+  transition: background-color 0.3s; /* Adiciona uma transição suave na cor de fundo ao passar o mouse */
+}
+
+.navbar-menu a:hover {
+  background-color: #c6a05f; /* Muda a cor de fundo ao passar o mouse sobre o link */
+  border-radius: 4px; /* Adiciona cantos arredondados ao fundo do link */
+}
+
+.navbar-menu .active {
+  border-bottom: 3px solid #c6a05f; /* Define um destaque para o link ativo com uma borda inferior */
+}
+
+/* Estilo da aplicação */
+.App {
+  flex-grow: 1; /* Faz o conteúdo da aplicação crescer e ocupar o espaço disponível */
+  display: flex;
+  flex-direction: column; /* Organiza o conteúdo em coluna */
+  justify-content: space-between; /* Espaça os itens dentro da aplicação para ocupar toda a altura */
+  align-items: center;
+}
+
+/* Estilo do rodapé */
+.footer {
+  background-color: #67171f; /* Define a cor de fundo do rodapé */
+  color: #fff; /* Define a cor do texto no rodapé */
+  padding: 10px 10px; /* Adiciona espaçamento interno ao rodapé */
+  width: 81%; /* Garante que o rodapé ocupe toda a largura da página */
+  margin-top: 0px; /* Espaçamento superior*/
+  align-content: center;
+}
+
+/* Organização das colunas no rodapé */
+.footer-content {
+  display: grid; /* Utiliza o layout de grade (grid) */
+  grid-template-columns: repeat(3, 1fr); /* Cria três colunas com largura igual no rodapé */
+  gap: 10px; /* Define o espaçamento entre as colunas */
+  max-width: 800px; /* Define uma largura máxima para o rodapé */
+  margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+}
+
+/* Seções individuais no rodapé */
+.footer-section {
+  padding: 10px; /* Adiciona espaçamento interno às seções */
+  text-align: center; /* Centraliza o texto em cada seção */
+}
+
+.footer-section h4 {
+  color: #c6a05f; /* Define a cor dos títulos das seções */
+  margin-bottom: 10px; /* Adiciona espaçamento inferior ao título */
+}
+
+.footer-section p {
+  font-size: 12px; /* Define o tamanho da fonte dos parágrafos */
+  line-height: 1.5; /* Define o espaçamento entre linhas */
+}
+
+/* Estilo das listas no rodapé */
+.footer-section ul {
+  list-style-type: none; /* Remove os marcadores da lista */
+  padding: 0; /* Remove o preenchimento interno da lista */
+}
+
+.footer-section ul li {
+  margin-bottom: 0px; /* Adiciona espaçamento entre os itens da lista */
+  background-color: #67171f;
+  padding: 0px 0px;
+  border: none;
+}
+
+.footer-section ul li a {
+  color: #fff; /* Define a cor dos links */
+  text-decoration: none; /* Remove o sublinhado dos links */
+  transition: color 0.3s; /* Adiciona uma transição suave à mudança de cor dos links */
+  font-size: 12px; /* Define o tamanho da fonte dos parágrafos */
+}
+
+.footer-section ul li a:hover {
+  color: #c6a05f; /* Muda a cor do link ao passar o mouse */
+}
+
+/* Estilo da seção de contato no rodapé */
+.footer-section.contact p {
+  margin: 10px 0; /* Define espaçamento superior e inferior para os parágrafos de contato */
+}
+
+/* Seção inferior do rodapé */
+.footer-bottom {
+  text-align: center; /* Centraliza o texto na parte inferior do rodapé */
+  border-top: 1px solid #c6a05f; /* Adiciona uma borda superior */
+  padding-top: 10px; /* Adiciona espaçamento acima do conteúdo */
+  background-color: #67171f; /* Mantém a cor de fundo do rodapé */
+}
+
+.footer-bottom p {
+  margin: 0; /* Remove a margem dos parágrafos na parte inferior */
+  font-size: 12px; /* Define o tamanho da fonte dos parágrafos */
+}
+
+/* Estilo dos ícones das redes sociais no rodapé */
+.footer-socials a {
+  margin: 0 10px; /* Adiciona espaçamento entre os ícones */
+  color: #fff; /* Define a cor dos ícones */
+  font-size: 24px; /* Define o tamanho dos ícones */
+  text-decoration: none; /* Remove o sublinhado dos links das redes sociais */
+  transition: color 0.3s; /* Adiciona uma transição suave à cor dos ícones */
+}
+
+.footer-socials a:hover {
+  color: #c6a05f; /* Muda a cor dos ícones ao passar o mouse */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr; /* Muda para uma única coluna em telas menores */
+    text-align: center; /* Centraliza o texto nas telas menores */
   }
-  to {
-    transform: rotate(360deg);
+}
+/* Estilo das campanhas na seção de campanhas */
+.campaigns-section {
+  margin-top: 40px; /* Espaçamento superior para a seção de campanhas */
+  width: 100%; /* Garante que a seção ocupe 100% da largura da tela */
+  max-width: 1200px; /* Define uma largura máxima para telas grandes */
+  margin: 0 auto; /* Centraliza horizontalmente a seção de campanhas */
+}
+
+.section-title {
+  font-size: 2em; /* Define o tamanho da fonte para o título da seção */
+  text-align: center; /* Centraliza o título */
+  margin-bottom: 20px; /* Espaçamento inferior para o título */
+}
+
+.campaign-grid {
+  display: grid; /* Utiliza grid layout para organizar as campanhas */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajusta o número de colunas automaticamente conforme o tamanho da tela */
+  gap: 20px; /* Espaçamento entre os itens da grid */
+}
+
+.campaign-card {
+  background-color: #fff; /* Cor de fundo do card de campanha */
+  border-radius: 8px; /* Bordas arredondadas nos cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para os cards */
+  padding: 20px; /* Espaçamento interno dos cards */
+  text-align: center; /* Centraliza o conteúdo dentro dos cards */
+  transition: transform 0.3s ease; /* Adiciona transição suave ao hover */
+}
+
+.campaign-card:hover {
+  transform: translateY(-5px); /* Eleva levemente o card quando o mouse passa por cima */
+}
+
+.campaign-image {
+  width: 100%; /* As imagens das campanhas ocupam 100% da largura do card */
+  height: auto; /* Mantém a proporção das imagens */
+  border-radius: 8px; /* Bordas arredondadas nas imagens */
+  margin-bottom: 15px; /* Espaçamento inferior das imagens */
+}
+
+.progress-bar {
+  background-color: #ddd; /* Cor de fundo da barra de progresso */
+  border-radius: 5px; /* Bordas arredondadas na barra de progresso */
+  height: 20px; /* Altura da barra de progresso */
+  margin: 10px 0; /* Espaçamento em torno da barra de progresso */
+}
+
+.progress {
+  background-color: #67171f; /* Cor da barra de progresso */
+  height: 100%; /* Preenche toda a altura da barra */
+  border-radius: 5px; /* Bordas arredondadas na barra de progresso */
+}
+
+.btn {
+  background-color: #67171f; /* Cor de fundo dos botões */
+  border: none; /* Remove a borda dos botões */
+  color: white; /* Cor do texto dos botões */
+  padding: 10px 20px; /* Espaçamento interno dos botões */
+  font-size: 16px; /* Tamanho da fonte dos botões */
+  border-radius: 5px; /* Bordas arredondadas nos botões */
+  cursor: pointer; /* Altera o cursor para o ícone de mão ao passar o mouse */
+  transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+}
+
+.btn:hover {
+  background-color: #9d8240; /* Muda a cor de fundo ao passar o mouse nos botões */
+}
+
+.ver-mais-btn {
+  background-color: #67171f; /* Cor de fundo do botão "Ver Mais" */
+  border: none; /* Remove as bordas do botão */
+  color: white; /* Cor do texto */
+  padding: 10px 20px; /* Espaçamento interno */
+  font-size: 16px; /* Tamanho da fonte */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor de ponteiro ao passar sobre o botão */
+  transition: background-color 0.3s; /* Transição suave na cor de fundo */
+}
+
+.ver-mais-btn:hover {
+  background-color: #9d8240; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilo responsivo para dispositivos móveis */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column; /* Muda a direção das colunas do rodapé para vertical em telas menores */
+    text-align: center; /* Centraliza o texto em telas menores */
+  }
+
+  .navbar-menu {
+    flex-direction: column; /* Muda a direção dos itens da navbar para vertical em telas menores */
+    gap: 10px; /* Reduz o espaçamento entre os itens da navbar em telas menores */
+  }
+
+  .campaign-grid {
+    grid-template-columns: 1fr; /* Em telas menores, as campanhas aparecem em uma única coluna */
   }
 }

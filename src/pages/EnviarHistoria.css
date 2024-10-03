@@ -1,0 +1,125 @@
+/* Contêiner principal do formulário */
+.form-container {
+    width: 60%; /* Define uma largura de 60% para o formulário */
+    max-width: 800px; /* Limita a largura máxima para não expandir muito em telas maiores */
+    margin: 20px auto; /* Centraliza o formulário horizontalmente na página */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #fff; /* Cor de fundo branca para contraste */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar o formulário */
+    text-align: center; /* Centraliza o texto */
+  }
+  
+  /* Estilo do título do formulário */
+  .form-container h1 {
+    color: #67171f; /* Cor bordô para o título */
+    font-size: 24px; /* Tamanho da fonte do título */
+    margin-bottom: 10px; /* Espaçamento inferior do título */
+  }
+  
+  /* Subtítulo do formulário */
+  .form-container p {
+    color: #c6a05f; /* Cor dourada para o subtítulo */
+    font-size: 16px; /* Tamanho da fonte do subtítulo */
+    margin-bottom: 20px; /* Espaçamento inferior do subtítulo */
+  }
+  
+  /* Estilos para os grupos de formulário */
+  .form-group {
+    margin-bottom: 15px; /* Espaçamento inferior entre os grupos */
+    text-align: left; /* Alinhamento à esquerda dos rótulos */
+  }
+  
+  /* Estilos para os rótulos dos campos */
+  .form-group label {
+    display: block;
+    color: #67171f; /* Cor bordô para os rótulos */
+    font-size: 14px; /* Tamanho da fonte dos rótulos */
+    margin-bottom: 5px; /* Espaçamento inferior dos rótulos */
+  }
+  
+  /* Estilos gerais para inputs, selects e textarea */
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%; /* O campo ocupa toda a largura disponível */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #ddd; /* Borda leve */
+    border-radius: 4px; /* Bordas arredondadas */
+    font-size: 14px; /* Tamanho da fonte */
+    box-sizing: border-box; /* Inclui o padding e a borda no tamanho total */
+    background-color: #f9f9f9; /* Fundo claro nos campos */
+  }
+  
+  /* Estilos para os campos de seleção (estado e cidade) */
+  .css-2b097c-container {
+    width: 100%; /* O select ocupa toda a largura */
+  }
+  
+  /* Organização dos campos em duas colunas (Estado/Cidade e Objetivo/Meta) */
+  .form-row {
+    display: flex; /* Flexbox para organizar os campos lado a lado */
+    justify-content: space-between; /* Espaça os campos igualmente */
+    gap: 20px; /* Espaçamento horizontal entre os campos */
+    margin-bottom: 20px; /* Espaçamento inferior da linha */
+  }
+  
+  /* Metade da largura para campos lado a lado */
+  .half-width {
+    width: 48%; /* Campos ocupam 48% da largura */
+  }
+  
+  /* Estilo para o campo de meta com prefixo "R$" */
+  .input-group {
+    display: flex; /* Flexbox para organizar o input e o prefixo */
+    align-items: center; /* Alinha verticalmente os elementos ao centro */
+  }
+  
+  .input-prefix {
+    background-color: #ddd; /* Cor de fundo do prefixo */
+    padding: 10px; /* Espaçamento interno do prefixo */
+    border-top-left-radius: 4px; /* Bordas arredondadas no topo esquerdo */
+    border-bottom-left-radius: 4px; /* Bordas arredondadas na parte inferior esquerda */
+    font-size: 13px; /* Tamanho da fonte do prefixo */
+  }
+  
+  /* Remove as bordas arredondadas do lado esquerdo do input */
+  input[type="text"] {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  /* Estilos do botão de envio */
+  .submit-button {
+    background-color: #67171f; /* Cor bordô do botão */
+    color: #fff; /* Cor branca para o texto do botão */
+    padding: 12px 20px; /* Preenchimento interno */
+    border: none; /* Remove a borda */
+    border-radius: 4px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor de ponteiro */
+    transition: background-color 0.3s ease; /* Transição suave */
+    width: 100%; /* O botão ocupa toda a largura */
+  }
+  
+  /* Estilo do botão ao passar o mouse */
+  .submit-button:hover {
+    background-color: #9d8240; /* Cor dourada ao passar o mouse */
+  }
+  
+  /* Responsividade para telas menores */
+  @media (max-width: 768px) {
+    .form-row {
+      flex-direction: column; /* Altera os campos para coluna em telas menores */
+      gap: 10px; /* Reduz o espaçamento entre os campos */
+    }
+  
+    .half-width {
+      width: 100%; /* Campos ocupam 100% da largura em telas menores */
+    }
+  
+    .submit-button {
+      width: 100%; /* O botão ocupa toda a largura em telas menores */
+    }
+  }
+  

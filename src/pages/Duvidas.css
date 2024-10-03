@@ -1,0 +1,85 @@
+/* Container principal da página */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Título da seção */
+  .section-title {
+    font-size: 2.5rem;
+    color: #67171f;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Estilos para o menu de abas */
+  .tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .tabs button {
+    background-color: #f1f1f1; /* Cor de fundo visível para botões inativos */
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #67171f; /* Cor do texto para botões inativos */
+  }
+  
+  .tabs button.active-tab {
+    background-color: #c6a05f; /* Cor de fundo do botão ativo (baseada na sua paleta) */
+    border-bottom: 3px solid #67171f; /* Destaque para a aba ativa */
+    color: #fff; /* Cor do texto do botão ativo */
+  }
+  
+  .tabs button:hover {
+    background-color: #67171f; /* Cor ao passar o mouse sobre o botão, usando a paleta de cores */
+    color: #fff; /* Cor do texto ao passar o mouse */
+  }
+  
+  /* Estilos para o conteúdo das abas */
+  .tab-content {
+    padding: 20px;
+    border: 1px solid #c6a05f;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  /* Accordion para o FAQ */
+  .faq-accordion {
+    margin-top: 20px;
+  }
+  
+  .faq-item {
+    margin-bottom: 10px;
+  }
+  
+  .faq-question {
+    background-color: #f1f1f1;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    font-size: 18px;
+    color: #67171f;
+  }
+  
+  .faq-answer {
+    background-color: #fff;
+    padding: 10px;
+    margin-top: 5px;
+    border-left: 2px solid #c6a05f;
+  }
+  
+  /* Efeitos de transição para o accordion */
+  .faq-question:hover {
+    background-color: #c6a05f /* Cor mais clara ao passar o mouse */
+  }
+  

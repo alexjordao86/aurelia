@@ -1,0 +1,130 @@
+/* Contêiner principal */
+.container {
+  width: 80vw;  /* O contêiner ocupa toda a largura da página */
+  height: auto;  /* A altura se ajusta automaticamente ao conteúdo */
+  display: flex;  /* Flexbox para alinhar o conteúdo */
+  flex-direction: column;  /* Organiza o conteúdo em uma coluna */
+  align-items: center;  /* Centraliza o conteúdo horizontalmente */
+  padding: 20px;  /* Adiciona espaçamento ao redor do conteúdo */
+  background-color: #f9f9f9;  /* Cor de fundo da página */
+}
+
+/* Hero Section (Banner) */
+.hero-section {
+  width: 100%;  /* O banner ocupa toda a largura da página */
+  height: 300px;  /* Define uma altura fixa para o banner */
+  background-color: #67171f;  /* Cor de fundo do banner */
+  display: flex;  /* Flexbox para organizar os elementos do banner */
+  flex-direction: column;  /* Organiza os elementos verticalmente */
+  justify-content: center;  /* Centraliza os elementos verticalmente */
+  align-items: center;  /* Centraliza os elementos horizontalmente */
+  color: white;  /* Cor do texto no banner */
+}
+
+.hero-section img {
+  width: 100%;  /* A imagem das mulheres unidas ocupa toda a largura */
+  height: 300px;  /* A imagem ocupa toda a altura disponível */
+  object-fit: cover;  /* Ajusta a imagem proporcionalmente sem distorções */
+  position: absolute; /* Faz o h1 flutuar sobre a imagem */
+
+}
+
+.hero-title {
+  margin-bottom: 10px;  /* Margem inferior para o título */
+  color: #c6a05f;  /* Cor do título */
+  position: absolute; /* Faz o h1 flutuar sobre a imagem */
+  /* border: 1px solid #67171f; */      /* Define uma borda de 3px com a cor #67171f */
+  padding: 10px; /* Adiciona um espaçamento entre o texto e a borda */
+  /* border-radius: 8px; */ /* Arredonda os cantos da borda */
+  background-color: rgba(0, 0, 0, 0.3); /* Fundo semitransparente para destacar o texto */
+  width: 90%;
+}
+
+.section-title {
+  font-size: 2.0rem; /* Tamanho da fonte */
+  color: #67171f; /* Cor do texto (ajuste conforme sua paleta) */
+  text-align: center; /* Centraliza o texto */
+  font-weight: bold; /* Deixa o texto em negrito */
+  margin-top: 20px; /* Espaçamento superior */
+  margin-bottom: 10px; /* Espaçamento inferior */
+  letter-spacing: 1px; /* Espaçamento entre letras */
+  text-transform: uppercase; /* Deixa o texto em maiúsculas */
+  border-bottom: 2px solid #c6a05f; /* Linha inferior para destacar */
+  display: inline-block; /* Faz o h1 se comportar como um bloco inline */
+  padding-bottom: 5px; /* Espaço entre o texto e a linha inferior */
+}
+
+/* Grid de Campanhas */
+.campaign-grid {
+  display: grid;  /* Define layout em grid */
+  grid-template-columns: repeat(3, 1fr);  /* Cria três colunas com tamanho igual */
+  gap: 10px;  /* Define o espaçamento entre os cards */
+  width: 100%;  /* O grid ocupa toda a largura disponível */
+  max-width: 100%;  /* Define uma largura máxima */
+  margin-top: 10px;  /* Margem superior para o grid */
+}
+
+/* Estilo dos cards de campanha */
+.campaign-card {
+  background-color: white;  /* Cor de fundo dos cards */
+  padding: 20px;  /* Espaçamento interno dos cards */
+  border: 1px solid #c6a05f;  /* Borda ao redor dos cards */
+  border-radius: 5px;  /* Bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(103, 23, 31, 0.2);  /* Sombra suave ao redor dos cards */
+  display: flex;  /* Flexbox para organizar o conteúdo */
+  flex-direction: column;  /* Organiza o conteúdo verticalmente */
+  justify-content: space-between;  /* Espaça os elementos do card igualmente */
+  height: 100%;  /* Faz com que todos os cards tenham a mesma altura */
+  text-align: center;  /* Centraliza o texto dentro dos cards */
+}
+
+/* Imagem da campanha */
+.campaign-image {
+  width: 100%;  /* A imagem ocupa toda a largura do card */
+  height: 200px;  /* Altura fixa para a imagem */
+  object-fit: cover;  /* Garante que a imagem se ajuste sem distorção */
+  border-radius: 5px;  /* Bordas arredondadas para a imagem */
+}
+
+/* Barra de progresso */
+.progress-bar {
+  background-color: #f1f1f1;  /* Fundo da barra de progresso */
+  height: 10px;  /* Altura da barra de progresso */
+  border-radius: 5px;  /* Bordas arredondadas */
+  margin: 10px 0;  /* Margem acima e abaixo da barra */
+}
+
+.progress {
+  background-color: #c6a05f;  /* Cor da barra de progresso preenchida */
+  height: 100%;  /* Preenche toda a altura da barra */
+  border-radius: 5px;  /* Bordas arredondadas */
+}
+
+/* Botões */
+.btn {
+  background-color: #67171f;  /* Cor de fundo dos botões */
+  color: white;  /* Cor do texto */
+  border: none;  /* Remove a borda padrão */
+  padding: 10px 20px;  /* Espaçamento interno dos botões */
+  cursor: pointer;  /* Define o cursor de ponteiro */
+  transition: background-color 0.3s ease;  /* Transição suave ao passar o mouse */
+  width: 100%;  /* O botão ocupa toda a largura do card */
+  text-align: center;  /* Centraliza o texto do botão */
+}
+
+.btn:hover {
+  background-color: #c6a05f;  /* Cor de fundo ao passar o mouse sobre o botão */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .campaign-grid {
+    grid-template-columns: repeat(2, 1fr);  /* Em telas menores, exibe 2 colunas */
+  }
+}
+
+@media (max-width: 576px) {
+  .campaign-grid {
+    grid-template-columns: 1fr;  /* Em telas muito pequenas, exibe uma coluna */
+  }
+}

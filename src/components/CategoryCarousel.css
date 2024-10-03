@@ -1,0 +1,40 @@
+.category-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+  }
+  
+  .carousel-items {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .carousel-item {
+    padding: 10px 20px;
+    background-color: #67171f;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.3s ease;
+  }
+  
+  .carousel-item:hover {
+    background-color: #c6a05f;
+  }
+  
+  .carousel-control {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #67171f;
+    padding: 10px;
+  }
+  
+  .carousel-control:hover {
+    color: #c6a05f;
+  }
+  
