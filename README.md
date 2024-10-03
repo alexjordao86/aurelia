@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +69,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=======
+# aurelia
+Aurelia é uma plataforma de crowdfunding focada em apoiar projetos liderados por mulheres. Conectamos ideias inovadoras a pessoas dispostas a contribuir, promovendo iniciativas em educação, empreendedorismo, saúde e mais. Nossa equipe seleciona campanhas com transparência e segurança para doações.
+>>>>>>> 3f08b5e30c12b8aaabf051ce0e2b18d947f0abce
